@@ -1,4 +1,4 @@
-# Alter Ego
+# Alter Ego [![CircleCI](https://circleci.com/gh/basgys/alterego.svg?style=svg)](https://circleci.com/gh/basgys/alterego) [![Go Report Card](https://goreportcard.com/badge/github.com/basgys/alterego)](https://goreportcard.com/report/github.com/basgys/alterego)
 
 alter ego; noun; a person's secondary or alternative personality.
 
