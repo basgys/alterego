@@ -19,7 +19,7 @@ ENV IP=0.0.0.0 \
     REDIRECT_STATUS_CODE=308
 
 # Check container health
-HEALTHCHECK CMD curl --fail http://127.0.0.1:$PORT/ping || exit 1
+HEALTHCHECK CMD curl --fail http://127.0.0.1:$PORT/__health__ || exit 1
 
 COPY entrypoint.sh /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]

@@ -61,7 +61,7 @@ func main() {
 
 	// Attach routes
 	mux := http.NewServeMux()
-	mux.HandleFunc("/health", health)
+	mux.HandleFunc("/__health__", health)
 	mux.HandleFunc("/", redirect)
 
 	// Boot
