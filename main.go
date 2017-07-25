@@ -116,7 +116,7 @@ func redirect(w http.ResponseWriter, r *http.Request) {
 			redir.String(),
 		)
 	}
-	http.Redirect(w, r, redir.String(), http.StatusTemporaryRedirect)
+	http.Redirect(w, r, redir.String(), redirectStatusCode)
 }
 
 func buildRules() ([]router.Rule, error) {
