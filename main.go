@@ -110,8 +110,9 @@ func redirect(w http.ResponseWriter, r *http.Request) {
 	}
 
 	if requestLogging {
-		fmt.Printf("[%s] Redirect %s -> %s\n",
+		fmt.Printf("[%s] Redirect (%d) %s -> %s\n",
 			time.Now().UTC().Format(time.RFC3339Nano),
+			redirectStatusCode,
 			req.String(),
 			redir.String(),
 		)
